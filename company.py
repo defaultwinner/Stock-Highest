@@ -2,7 +2,6 @@ import sys
 import os
 import csv
 import urllib2
-import unittest
 
 def getHighestPrices(file):
     with open(file, 'rb') as csvfile:
