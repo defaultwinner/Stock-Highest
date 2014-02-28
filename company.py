@@ -2,6 +2,7 @@ import sys
 import os
 import csv
 import urllib2
+import unittest
 
 def getHighestPrices(file):
     with open(file, 'rb') as csvfile:
@@ -30,10 +31,6 @@ def getHighestPrices(file):
             i += 1
         return stock_highest
 
-def testStockHighest():
-    file = os.path.join(os.path.dirname(__file__), 'test.csv')
-    stock_highest = getHighestPrices(file)
-    return stock_highest
 
 if __name__ =='__main__':
     file = sys.argv[1]
